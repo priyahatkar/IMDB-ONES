@@ -1,0 +1,71 @@
+body{
+    background-color: rgb(4,43,95);
+}
+header{
+    margin: 0;
+    padding: 10px;
+}
+.card {
+    position: relative;
+    height: 500px;
+    margin-bottom: 20px;
+}
+.img-fluid{
+    height: 500px;
+    margin: 0;
+    overflow: hidden;
+}
+
+figure .img-fluid{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* position: relative; */
+}
+
+.heading{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(4, 57, 114);
+    color: #fff;
+}
+.heading span {
+    display: inline-block;
+    margin: -23px;
+}
+.overview{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 40px;
+    transform: translateY(100%);
+    transition: all .4 ease-in-out;
+    display: none;
+}
+.logo img{
+    height: 40px;
+    margin: -24px;
+
+}
+
+.form-control{
+    position: relative;
+}
+.btn{
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+.card:hover .overview,
+.card:active .overview,
+.card:focus .overview {
+    display: block;
+    transform: translateY(0);
+}
+
+
